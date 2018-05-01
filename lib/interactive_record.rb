@@ -25,6 +25,7 @@ class InteractiveRecord
   end
 
   def initialize(options={})
+    binding.pry
     options.each do |property, value|
       self.send("#{property}=", value)
     end
