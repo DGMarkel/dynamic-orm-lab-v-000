@@ -4,8 +4,8 @@ require 'active_support/inflector'
 class InteractiveRecord
 
   self.table_name
-  binding.pry
     table_name = self.class.downcase.pluralize
+    binding.pry
   end
-  
+
 end
